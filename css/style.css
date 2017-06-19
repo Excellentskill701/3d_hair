@@ -1,0 +1,124 @@
+.site-index .panorama{
+    height: 600px;
+}
+
+body
+{
+	overflow: hidden;
+	margin : 0px;
+	padding: 0px;
+}
+
+.call-to-action
+{
+	position: absolute;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	bottom: 12px;
+	margin-left: calc(50% - 60px);
+	cursor: pointer;
+	z-index: 999;
+}
+
+*, *::before, *::after
+{
+	box-sizing: border-box;
+}
+
+.call-to-action a
+{
+	font-size		: 12px;
+	letter-spacing	: 2px;
+	height 			: 100%;
+	display 		: white;
+	text-decoration	: none;
+	outline 		: none;
+}
+
+.call-to-action span
+{
+	position 			:absolute;
+	background 			: rgba(255, 255, 255, 0.1);
+	-webkit-transition	: all 0.5s ease 1.2s;
+    transition 			: all 0.5s ease 1.2s;
+}
+
+
+.call-to-action span:after 
+{
+	position 			: absolute;
+	background 			: black;
+	content 			: '';
+	-webkit-transition 	: all 0.5s ease;
+    transition 			: all 0.5s ease;
+}
+
+.call-to-action:hover a {
+  color	  		: white;
+}
+
+.call-to-action:hover .top::after,
+.call-to-action:hover .bottom::after {
+  width 		: 100%;
+}
+
+.call-to-action .top, 
+.call-to-action .bottom
+{
+	width 		: 100%;
+	height 		: 1px;
+}
+
+.call-to-action .top:after, 
+.call-to-action .bottom:after
+{
+	width 		: 0;
+	height 		: 1px;
+}
+
+.call-to-action .top, 
+.call-to-action .top::after
+{
+	top 		: 0;
+	left 		: 0;	
+}
+
+.call-to-action .bottom, 
+.call-to-action .bottom::after
+{
+	bottom 		: 0;
+	right 		: 0;	
+}
+
+.call-to-action:hover .left::after, 
+.call-to-action:hover .right::after {
+	height 		: 100%;
+}
+
+.call-to-action .right,
+.call-to-action .left {
+	width 		: 1px;
+	height 		: 100%;
+}
+
+.call-to-action .left:after, 
+.call-to-action .right:after
+{
+	width 		: 1px;
+	height 		: 0;
+}
+
+.call-to-action .left,
+.call-to-action .left::after
+{
+	bottom 		: 0;
+	left 		: 0;	
+}
+
+.call-to-action .right, 
+.call-to-action .right::after
+{
+	top 		: 0;
+	right 		: 0;	
+}
